@@ -1,3 +1,9 @@
+export function generateMetadata({ params }) {
+    return {
+        title: `Products ${params.productid}`,
+    }
+}
+
 export default function Productdetail({ params }) {
     return (
         <main className="h-screen flex justify-center flex-col items-center text-4xl">
