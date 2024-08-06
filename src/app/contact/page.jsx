@@ -1,6 +1,17 @@
+'use client'
+import { useRouter } from "next/navigation";
+
 export default function Contact() {
+
+    const router = useRouter()
+
+    const handleSubmit = () => {
+        router.push('/login')
+    }
+
     return (
         <div div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8" >
+            <button onClick={handleSubmit}>go to login</button>
             <div className="mx-auto max-w-lg">
                 <h1 className="text-center text-2xl font-bold text-indigo-600 sm:text-3xl">Contact Us</h1>
 
